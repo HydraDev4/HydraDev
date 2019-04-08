@@ -1,22 +1,3 @@
-# Discord Github Relay Bot
-This is a simple NodeJS bot that listens for Github Webhook requests and forwards them to a Discord channel on a server. Its on you to make a Discord account for the bot and add it to a specific server. The bot can listen to multiple servers, but only one named channel is supported (currently).
-
-To set this bot up you will need to have NodeJS `v4.2` or higher. After that, simply run the commands below.
-
-```
-cd /home
-git clone https://github.com/DaneEveritt/Discord-Bot.git discord
-cd discord
-npm install --production
-mv config.json.dist config.json
-```
-
-You'll need to edit the `config.json` file using your favorite editor and then run `node index.js | node_modules/bunyan/bin/bunyan -o short` to start the bot and view the output. If you want to keep the bot running in the background, look into using something like [`forever`](https://github.com/foreverjs/forever).
-
-Enjoy.
-
-# License
-```
 This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
@@ -41,4 +22,4 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org>
-```
+
